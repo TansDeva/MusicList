@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_title_audio"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_above="@+id/rl_audio_options"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.tanshul.player.view.HomeImageView
+                android:id="@+id/iv_song_image"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/rl_audio_options"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/margin_medium"
+                android:paddingRight="@dimen/margin_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_time_current"
+                    android:layout_centerVertical="true"
+                    android:text="@string/audio_time_start"
+                    android:textSize="@dimen/media_controls_textsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <SeekBar
+                    android:id="@+id/sb_media_position"
+                    android:thumbTint="@color/media_color"
+                    android:progressTint="@color/media_color"
+                    android:layout_toLeftOf="@+id/tv_time_finish"
+                    android:layout_toRightOf="@+id/tv_time_current"
+                    android:progressBackgroundTint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_time_finish"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/audio_time_start"
+                    android:textSize="@dimen/media_controls_textsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:paddingLeft="@dimen/margin_normal"
+                android:paddingRight="@dimen/margin_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:tint="@color/white"
+                        android:id="@+id/iv_backward"
+                        android:src="@android:drawable/ic_media_rew"
+                        android:padding="@dimen/media_controls_padding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_play"
+                        android:tint="@color/white"
+                        android:src="@android:drawable/ic_media_play"
+                        android:padding="@dimen/media_controls_padding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/iv_pause"
+                        android:tint="@color/white"
+                        android:src="@android:drawable/ic_media_pause"
+                        android:padding="@dimen/media_controls_padding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:tint="@color/white"
+                        android:id="@+id/iv_forward"
+                        android:src="@android:drawable/ic_media_ff"
+                        android:padding="@dimen/media_controls_padding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

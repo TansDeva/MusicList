@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_main_item"
+    android:padding="@dimen/margin_small"
+    android:layout_margin="@dimen/margin_small"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_width="@dimen/home_list_image"
+            android:layout_height="@dimen/home_list_image">
+
+            <ImageView
+                android:id="@+id/iv_song_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <SeekBar
+                android:max="100"
+                android:id="@+id/sb_song_time"
+                android:thumbTint="@color/media_color"
+                android:layout_alignParentBottom="true"
+                android:progressDrawable="@drawable/bg_seek_list"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:layout_marginLeft="@dimen/home_list_seek"
+                android:layout_marginRight="@dimen/home_list_seek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleHorizontal" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.tanshul.player.view.TextViewGentona
+                android:id="@+id/tv_song_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:maxLines="1"
+                android:id="@+id/tv_song_artist"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/divider_color"
+                android:layout_margin="@dimen/margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_normal" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/ll_song_play"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_song_play"
+                        android:src="@drawable/ic_media_play"
+                        android:layout_width="@dimen/home_list_media"
+                        android:layout_height="@dimen/home_list_media" />
+
+                    <TextView
+                        android:text="@string/home_song_play"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:id="@+id/tv_song_play"
+                        android:textColor="@color/media_color"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:textSize="@dimen/text_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/ll_song_save"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/ic_song_save"
+                        android:layout_width="@dimen/home_list_media"
+                        android:layout_height="@dimen/home_list_media" />
+
+                    <TextView
+                        android:text="@string/home_song_save"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/media_color"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:textSize="@dimen/text_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

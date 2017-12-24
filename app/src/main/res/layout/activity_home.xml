@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.tanshul.player.view.TextViewGentona
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_title"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/home_menu_margin"
+                android:layout_marginBottom="@dimen/home_menu_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_menu_search"
+                    android:src="@drawable/ic_menu_search"
+                    android:layout_marginLeft="@dimen/home_menu_margin"
+                    android:layout_marginRight="@dimen/home_menu_margin"
+                    android:contentDescription="@string/menu_home_search"
+                    android:layout_width="@dimen/home_menu_image"
+                    android:layout_height="@dimen/home_menu_image" />
+
+                <ImageView
+                    android:id="@+id/iv_menu_toggle"
+                    android:src="@drawable/ic_list_card"
+                    android:layout_marginLeft="@dimen/home_menu_margin"
+                    android:layout_marginRight="@dimen/home_menu_margin"
+                    android:contentDescription="@string/menu_home_toggle"
+                    android:layout_width="@dimen/home_menu_image"
+                    android:layout_height="@dimen/home_menu_image" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_search_view"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:padding="@dimen/margin_medium"
+                android:id="@+id/iv_title_search"
+                android:src="@drawable/ic_title_search"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/home_menu_icon"
+                android:layout_height="@dimen/home_menu_icon" />
+
+            <EditText
+                android:background="@null"
+                android:textSize="@dimen/text_normal"
+                android:id="@+id/et_search_text"
+                android:imeOptions="actionSearch"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_title_search"
+                android:layout_toLeftOf="@+id/iv_menu_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:padding="@dimen/margin_medium"
+                android:id="@+id/iv_menu_cancel"
+                android:src="@drawable/ic_title_cancel"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/home_menu_icon"
+                android:layout_height="@dimen/home_menu_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

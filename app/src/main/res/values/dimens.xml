@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Default margin-->
+    <dimen name="margin_min">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_xlarge">64dp</dimen>
+
+    <!--Default text-sizes-->
+    <dimen name="text_min">10sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_normal">16sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_title">22sp</dimen>
+
+    <!--Other required dimensions-->
+    <dimen name="no_size">0dp</dimen>
+    <dimen name="bg_corner">4dp</dimen>
+    <dimen name="border_stroke">2dp</dimen>
+    <dimen name="divider_normal">1dp</dimen>
+    <dimen name="progress_small">32dp</dimen>
+    <dimen name="progress_normal">64dp</dimen>
+
+    <!--Empty view sizes-->
+    <dimen name="empty_view_image">128dp</dimen>
+    <dimen name="empty_button_elevate">4dp</dimen>
+    <dimen name="empty_button_height">36dp</dimen>
+
+    <!--Splash screen dimensions-->
+    <dimen name="splash_margin">96dp</dimen>
+    <dimen name="splash_icon_size">96dp</dimen>
+    <dimen name="splash_text_size">36sp</dimen>
+
+    <!--Home screen dimensions-->
+    <dimen name="home_menu_icon">48dp</dimen>
+    <dimen name="home_menu_image">32dp</dimen>
+    <dimen name="home_menu_margin">12dp</dimen>
+    <dimen name="home_list_image">80dp</dimen>
+    <dimen name="home_list_seek">-8dp</dimen>
+    <dimen name="home_list_media">24dp</dimen>
+    <dimen name="home_list_buffer">4dp</dimen>
+    <dimen name="home_grid_icon">48dp</dimen>
+
+    <!--Music screen dimensions-->
+    <dimen name="media_controls_padding">8dp</dimen>
+    <dimen name="media_controls_textsize">18sp</dimen>
+</resources>

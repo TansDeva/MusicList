@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Player</string>
+
+    <!--Menu texts-->
+    <string name="menu_home_toggle">Toggle</string>
+    <string name="menu_home_profile">Portfolio</string>
+    <string name="menu_home_search">Search</string>
+    <string name="menu_profile_link">Open link here</string>
+    <string name="menu_profile_browse">Open in browser</string>
+
+    <!--Message texts-->
+    <string name="msg_no_network">Disconnected</string>
+    <string name="msg_no_data">No Data Found</string>
+    <string name="msg_retry_text">Retry</string>
+    <string name="msg_search_empty">Please enter keyword</string>
+    <string name="msg_permission_needed">Permission necessary</string>
+    <string name="msg_permission_storage">Storage permission is necessary</string>
+    <string name="msg_start_download">Starting download</string>
+    <string name="msg_error_default">Some error occured</string>
+
+    <!--Home list texts-->
+    <string name="home_song_play">Play</string>
+    <string name="home_song_pause">Pause</string>
+    <string name="home_song_buffer">Loading</string>
+    <string name="home_song_save">Download</string>
+
+    <!--Audio screen texts-->
+    <string name="audio_time_start">0:00</string>
+</resources>
